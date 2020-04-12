@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <!-- AJAX Jquery start -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous">
+        </script>
+        <!-- AJAX Jquery end -->
+    </head>
+    <body>
+        <h4>First Upload the file and then click generate csv(for pdf files click after the page reloads second time)</h4>
+        <form id="upload-file" onsubmit="return false">
+            <label for="file">Select a file</label>
+            <input name="file" type="file">
+            <input id="upload-file-btn" type="submit" name="submit" value="upload"><br><br><br> 
+            <!-- <input id="generate" type="button" style="display: none;" name="generate" value="generate csv"> -->
+        </form>
+        <a href="./static/file.csv">
+            <button style="display: block;" id="generate">Generate CSV</button>
+        </a>
+        <script src="./main.js"></script>
+    </body>
+</html>
